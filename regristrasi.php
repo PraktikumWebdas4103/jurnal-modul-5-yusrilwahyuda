@@ -23,8 +23,8 @@ if (isset($_POST['submit'])) {
    $Error = array();
    if (strlen($_POST['nim'])<=10) {
     $error['nim']="nim harus 10";
-   }if(strlen($_POST['nama'])<=25){
-    $error['nama']="nama harus 25";
+   }if(strlen($_POST['nama'])>=25){
+    $error['nama']="nama lebih 25";
    }if (empty($email)) {
     $error['email']="email tidak boleh kosong";
   
